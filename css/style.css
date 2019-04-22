@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+html,
+body {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  display: none !important;
+  animation: fade-out 1s;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.dflex, .bla_uleads_table tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bla_wrapper_login {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/auth/login_1.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bla_wrapper_login1 {
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07);
+}
+
+.bla_wrapper_submit1 {
+  width: 100%;
+  background: #162E4C;
+}
+
+.bla_wrapper_submit1:hover,
+.bla_wrapper_submit1:focus {
+  background: #0c2747;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #0c2747;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #0c2747;
+  -webkit-box-shadow: 0 1px 0 0 #0c2747;
+  box-shadow: none;
+}
+
+.bla_wrapper_login11 {
+  font-size: 1.1em;
+  margin-bottom: 36px;
+}
+
+.bla_wrapper_login11 img {
+  width: 2.6em;
+  height: 2.6em;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.bla_wrapper_login11_1 {
+  margin: auto 0px;
+  color: #C51929;
+  font-weight: 500;
+}
+
+.bla_wrapper_login11_2 {
+  margin: auto auto auto 4px;
+  color: #162E4C;
+  font-weight: 200;
+}
+
+.bla_progress {
+  background-color: #cde3ff !important;
+}
+
+.bla_progress_inner {
+  background-color: #162e4c !important;
+}
+
+.bla_navbar {
+  background: #ffffff;
+}
+
+.bla_navbar1 {
+  height: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.bla_navbar1 img {
+  height: 22px;
+}
+
+.bla_navbar .sidenav-trigger i {
+  color: #1A2F49;
+}
+
+.bla_campaignbtn {
+  background: -webkit-linear-gradient(330deg, #4874ab, #1A2F49);
+  background: -o-linear-gradient(330deg, #4874ab, #1A2F49);
+  background: linear-gradient(120deg, #4874ab, #1A2F49);
+}
+
+.bla_navbar_exit {
+  display: block;
+}
+
+.bla_navbar_exit i {
+  color: #1d3450;
+}
+
+.bla_dashboard1, .bla_dashboard2{
+  width: 100%;
+  background: #f2f8f9;
+  padding: 18px 10px;
+  min-height: calc(100vh - 64px);
+  max-height: calc(100vh - 64px);
+  overflow-y: scroll;
+}
+
+.bla_figure1{
+  margin-bottom: 22px;
+}
+.bla_figure11{
+  justify-content: space-between;
+  padding: 1.4em;
+  background: #fff;
+}
+.bla_figure11_1{
+  margin: auto 0px;
+}
+.bla_figure11_1 i{
+  font-size: 2.6em;
+}
+.bla_figure11_1 .bla_f1{
+  color: #e65251 !important;
+}
+.bla_figure11_1 .bla_f2{
+  color: #ffaf00 !important;
+}
+.bla_figure11_1 .bla_f3{
+  color: #00ce68 !important;
+}
+.bla_figure11_1 .bla_f4{
+  color: #8862e0 !important;
+}
+.bla_figure11_2{
+  text-align: right;
+}
+.bla_figure11_21{
+  font-size: 0.9em;
+}
+.bla_figure11_22{
+  margin-top: 8px;
+  font-size: 1.4em;
+}
+
+.bla_all_campcard img{
+  width: 5em;
+  height: 5em;
+}
+.bla_all_campcard1{
+  margin: auto 0px;
+}
+.bla_all_campcard11{
+  font-size: 1.1em;
+}
+.bla_all_campcard12{
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+#campaignDetail, #leadDetail{
+  margin-bottom: 10px;
+}
+#allCampaignList .card{
+  width: 100%;
+}
+
+.bla_campaign_outer .row{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.bla_lead_header{
+  justify-content: space-between;
+}
+.bla_lead_header span{
+  margin: auto 0px;
+}
+
+.bla_campaign_exit{
+  margin: auto 0px auto 16px;
+}
+.bla_campaign_exit i{
+  font-size: 2em !important;
+  color: #1d334f;
+}
+
+.bla_camp_detail1{
+  justify-content: space-between;
+}
+.bla_camp_detail3{
+  flex-direction: column;
+}
+.bla_camp_mgn1{
+  margin-top: 6px;
+}
+.bla_camp_detail11{
+  font-weight: 500;
+}
+
+.bla_camp_detail2{
+  overflow-x: scroll;
+}
+.bla_camp_detail2::-webkit-scrollbar { 
+  display: none; 
+}
+.bla_camp_detail32{
+  margin-top: 6px;
+}
+
+.bla_campaign_tabs{
+  background: none;
+}
+
+
+.bla_uleads_btn{
+  flex-wrap: wrap;
+}
+.bla_uleads_btn input{
+  background: #d6e0ff;
+  padding: 8px;
+  cursor: pointer;
+}
+.bla_uleads_btn .bla_uleads_abtn{
+  background: #020f37;
+  height: 100%;
+  padding: 9px 16px;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin: auto 0px auto auto;
+}
+.bla_uleads_uresult{
+  width: 100%;
+}
+
+.bla_leadupload_err{
+  padding: 18px 0px;
+  font-size: 0.95em;
+  color: #ff6868;
+  font-weight: 500;
+}
+.bla_leadupload_msg{
+  font-size: 0.9em;
+  color: #02103a;
+  font-weight: 500;
+  padding-top: 24px;
+}
+.bla_leadupload_confirm{
+  padding-top: 12px;
+  justify-content: space-between;
+}
+.bla_leadupload_confirm1{
+  margin: auto 0px;
+}
+
+
+.bla_uleads_table{
+  flex-direction: column;
+  border: 1px solid #b3b3b3;
+  box-shadow: none;
+  margin-top: 18px;
+}
+.bla_uleads_table td,.bla_uleads_table th{
+  width: 25% !important;
+  overflow-wrap: break-word !important;
+  font-size: 0.8em;
+  padding: 10px 5px;
+}
+
+.bla_uleads_table tbody{
+  max-height: 180px;
+  overflow: scroll;
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 992px) {
+  .bla_navbar, .bla_dashboard {
+    padding-left: 300px;
+  }
+
+  .bla_navbar_exit {
+    margin: auto 24px auto 0px;
+  }
+  .bla_camp_detail21{
+    width: 40%;
+    height: 12em !important;
+    object-fit: cover;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .bla_navbar_exit {
+    margin: auto 16px auto 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bla_wrapper_login1 {
+    width: 300px;
+  }
+
+  .bla_navbar1 img {
+    margin: auto 24px;
+  }
+
+  .bla_all_campcard{
+    padding: 20px !important;
+  }
+  .bla_all_campcard1{
+    padding-left: 20px;
+  }
+  .bla_camp_detail21{
+    width: 40%;
+    height: 9em;
+    object-fit: cover;
+    margin-right: 24px;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 767px) {
+
+  .bla_wrapper_login1 {
+    width: 80%;
+  }
+
+  .bla_navbar1 img {
+    margin: auto 16px;
+  }
+
+  .bla_all_campcard{
+    padding: 16px !important;
+  }
+  .bla_all_campcard1{
+    padding-left: 16px;
+  }
+  
+  .bla_camp_detail21{
+    width: 40%;
+    height: 9em;
+    object-fit: cover;
+    margin-right: 24px;
+  }
+
+}
+
+
+/* Loader Style */
+
+.bla_loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.dash {
+  margin: 0 15px;
+  width: 35px;
+  height: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #FECDFF;
+}
+
+.uno {
+  margin-right: -18px;
+  transform-origin: center left;
+  background: #C51929;
+  animation: spin 3s linear infinite;  
+}
+
+.dos {
+  transform-origin: center right;
+  background: #162E4C;
+  animation: spin2 3s linear infinite;
+  animation-delay: .2s;
+}
+
+.tres {
+  transform-origin: center right;
+  animation: spin3 3s linear infinite;
+  background: #C51929;
+  animation-delay: .3s;
+}
+
+.cuatro {
+  transform-origin: center right;
+  background: #162E4C;
+  animation: spin4 3s linear infinite;
+  animation-delay: .4s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  30% {
+    transform: rotate(370deg);
+  }
+  35% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-180deg);
+  }
+  35% {
+    transform: rotate(-190deg);
+  }
+  40% {
+    transform: rotate(-180deg);
+  }
+  78% {
+    transform: rotate(-180deg);
+  }
+  95% {
+    transform: rotate(-360deg);
+  }
+  98% {
+    transform: rotate(-370deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  27% {
+    transform: rotate(0deg);  
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  45% {
+    transform: rotate(190deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  62% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  80% {
+    transform: rotate(370deg);
+  }
+  85% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  38% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-360deg);
+  }
+  65% {
+    transform: rotate(-370deg);
+  }
+  75% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

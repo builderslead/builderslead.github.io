@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Builders Lead</title>
+    <!-- plugins:css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/player.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+    <div class="bla_loader">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+    </div>
+    <div class="bla_wrapper hidden">
+        <div class="dflex bla_wrapper_login">
+            <div class="bla_wrapper_login1">
+                <div id="loginForm" autocomplete="off" class="bla_wrapper_fields">
+                    <div class="dflex bla_wrapper_login11">
+                        <img src="images/logo.png">
+                        <span class="bla_wrapper_login11_1">Builders</span>
+                        <span class="bla_wrapper_login11_2">Lead</span>
+                    </div>
+                    <div class="row bla_wrapper_field">
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="row bla_wrapper_field">
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <button id="loginFormSubmit" class="btn waves-effect waves-light bla_wrapper_submit1" name="action">BUILD
+                        LEADS
+                        <i class="material-icons right">trending_up</i>
+                    </button>
+                    <div id="loginProgress" class="progress bla_progress hidden">
+                        <div class="indeterminate bla_progress_inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bla_sidenav_wrapper hidden">
+            <nav class="bla_navbar">
+                <div class="dflex bla_navbar1">
+                    <div class="dflex bla_navbar1_1">
+                        <a onclick="closeDetails()" class="waves-effect bla_campaign_exit hidden"><i class="material-icons">keyboard_backspace</i></a>
+                        <img src="images/logo.svg">
+                    </div>
+                    <div class="dflex bla_navbar1_2">
+                        <a onclick="logout()" class="waves-effect bla_navbar_exit sidenav-close"><i class="material-icons">exit_to_app</i></a>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    </div>
+                </div>
+                <!-- navbar content here  -->
+            </nav>
+
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="images/auth/login_1.jpg">
+                        </div>
+                        <a href="#user"><img id="userImg" class="circle" src="images/faces-clipart/pic-1.png"></a>
+                        <a href="#name"><span id="userName" class="white-text name">John Doe</span></a>
+                        <a href="#email"><span id="userEmail" class="white-text email">youcantuse@blead.com</span></a>
+                    </div>
+                </li>
+                <li><a class="subheader">Let's make some leads.</a></li>
+                <li class="bla_nav_divider">
+                    <div class="divider"></div>
+                </li>
+                <li onclick="goToStats()" class="bla_sidenav_items bla_sidenav_stat active"><a class="waves-effect sidenav-close"
+                        href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                <li onclick="goToCampaigns()" class="bla_sidenav_items bla_sidenav_camp"><a class="waves-effect sidenav-close"
+                        href="#!"><i class="material-icons">featured_play_list</i>View Campaigns</a></li>
+                <li onclick="goToUsers()" class="bla_sidenav_items bla_sidenav_users"><a class="waves-effect sidenav-close"
+                        href="#!"><i class="material-icons">group</i>Registered Users</a></li>
+                <li onclick="logout()"><a class="waves-effect sidenav-close" href="#!"><i class="material-icons">exit_to_app</i>Log
+                        Out</a></li>
+            </ul>
+        </div>
+
+        <div class="dflex bla_dashboard hidden">
+            <div class="bla_dashboard1 bla_dash_screens">
+                <div class="row bla_figures">
+                    <div class="col s12 m3 bla_figure1">
+                        <div class="dflex bla_figure11">
+                            <div class="bla_figure11_1">
+                                <i class="bla_f1 mdi mdi-cube"></i>
+                            </div>
+                            <div class="bla_figure11_2">
+                                <div class="bla_figure11_21">Total Revenue</div>
+                                <div class="bla_figure11_22">&#8377; <span id="figureRevenue">0</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3 bla_figure1">
+                        <div class="dflex bla_figure11">
+                            <div class="bla_figure11_1">
+                                <i class="bla_f2 mdi mdi-receipt"></i>
+                            </div>
+                            <div class="bla_figure11_2">
+                                <div class="bla_figure11_21">Active Campaigns</div>
+                                <div class="bla_figure11_22"><span id="figureCampaigns">0</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3 bla_figure1">
+                        <div class="dflex bla_figure11">
+                            <div class="bla_figure11_1">
+                                <i class="bla_f3 mdi mdi-poll-box"></i>
+                            </div>
+                            <div class="bla_figure11_2">
+                                <div class="bla_figure11_21">Leads Generated</div>
+                                <div class="bla_figure11_22"><span id="figureLeads">0</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3 bla_figure1">
+                        <div class="dflex bla_figure11">
+                            <div class="bla_figure11_1">
+                                <i class="bla_f4 mdi mdi-account-location"></i>
+                            </div>
+                            <div class="bla_figure11_2">
+                                <div class="bla_figure11_21">Users</div>
+                                <div class="bla_figure11_22"><span id="figureUsers">0</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bla_dashboard2 bla_dash_screens hidden">
+                <div class="row bla_campaign_toptabs">
+                    <div class="col s12">
+                        <ul class="tabs bla_campaign_tabs">
+                            <li class="tab col s6"><a class="active" href="#test1">ACTIVE CAMPAIGNS</a></li>
+                            <li class="tab col s6"><a href="#test2">COMPLETED CAMPAIGNS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bla_dashboard21">
+                    <div id="allCampaignList" class="row">
+                    </div>
+                    <div id="campaignDetail" class="row hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
